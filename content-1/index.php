@@ -3,7 +3,7 @@
 	$id=$_GET['id'];
 	if(isset($_GET['id'])) {
 		$sql = "SELECT * FROM users WHERE idusers=$id LIMIT 1";
-		$result=mysql_query($sql);
+		//$result=mysql_query($sql);
 	} else {
 		header("Location: index.php?id=0");
 		exit;

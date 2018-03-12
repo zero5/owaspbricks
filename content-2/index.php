@@ -3,7 +3,7 @@
 	$user=$_GET['user'];
 	if(isset($_GET['user'])) {
 		$sql = "SELECT * FROM users WHERE name='$user'";
-		$result=mysql_query($sql);
+		//$result=mysql_query($sql);
 	} else {
 		header("Location: index.php?user=harry");
 		exit;
